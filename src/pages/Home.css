@@ -1,0 +1,29 @@
+/* Home.css */
+@keyframes jump {
+  0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-50px) scale(0.6);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(0) scale(0.5);
+      opacity: 1;
+  }
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  background-image: url('/src/components/green back groud.webp');
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-position: center; /* Centers the background image */
+  z-index: -1; /* Places the background behind other elements */
+}
